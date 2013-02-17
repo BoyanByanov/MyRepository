@@ -1,0 +1,96 @@
+html,
+body,
+div,
+p,
+a,
+input,
+ul,
+li,
+fieldset,
+button,
+input,
+select,
+option,
+textarea {
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper{
+	margin-top: 0px;
+	margin-left: 20px;
+}
+
+ul.sidebar {
+	width: 182px;
+	height: 232px;
+	background: -webkit-linear-gradient(top, #d29bff 0%, #8977ff 100%);
+	list-style-type: none;
+	font-family: Arial, Freesans, sans-serif;
+	padding: 0px 15px 0px 15px ;
+	border-radius: 10px;
+	display: block;
+}
+
+ul.sidebar li {
+	font-size: 1.4em;
+	text-decoration:none;
+	color: black;
+	padding: 6px 0px 5px 0px;
+	text-align: center;
+	border-bottom: 1px solid #9d00ff;
+}
+
+ul.sidebar li:last-of-type{
+	border-bottom: none;
+}
+
+ul.sidebar li a
+{
+	color: black;
+	text-decoration: none;
+}
+
+ul.sidebar li:hover{
+	border: 1px solid #9d00ff;
+	border-radius: 10px;
+}
+
+ul li ul {
+	display: none;
+}
+
+/*pod menu*/
+ul.sidebar li:hover > ul{
+	position:absolute;
+	left: 225px;
+	display: inline-block;
+	background: #b5aaff;
+	list-style-type: none;
+	font-family: Arial, Freesans, sans-serif;
+	padding: 0px 15px 0px 30px ;
+	border-radius: 10px;
+	height: 140px;
+	width: 190px;
+}
+
+ul.sidebar li:hover ul li{
+	font-size: 0.8em;
+	padding: 6px 5px 6px 8px;
+}
+
+ul.sidebar li:hover ul > li:first-of-type{
+	list-style-image:url('imgs/arrow.png');
+}
+
+ul.sidebar li:hover ul > li:hover{
+	border-bottom: 1px solid #9d00ff;
+	}
+
+ul.sidebar li:hover ul li a{
+	text-decoration: none;
+}
+
+aside{
+	margin-top: 10px;
+}
